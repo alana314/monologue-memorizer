@@ -1,0 +1,22 @@
+body {
+	padding: 1rem;
+}
+.memorizerwrap {
+	width: 90%;
+}
+
+.monologueenter {
+	min-height: 40rem;
+	display: block;
+}
+
+button.reset {
+}
+
+.monologue {
+	border: 1px solid #666;
+	width: 90%;
+	min-height: 30rem;
+	padding: .5rem;
+	user-select: none;
+}
