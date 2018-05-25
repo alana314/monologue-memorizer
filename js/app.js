@@ -1,7 +1,11 @@
 $(document).ready(function(){
 	var i = 1;
 	$('.monologueenter').text(localStorage.monologue);
-	var sentences = localStorage.monologue.split(/[.|\!|?]/);
+	if(typeof(localStorage.monologue) != 'undefined')
+	{
+		var sentences = localStorage.monologue.split(/[.|\!|?]/);
+	}else
+	var sentences = '';
 	if(typeof(sentences[0]) != 'undefined')
 	{
 		$('.monologue').append(sentences[0] + ". ");
