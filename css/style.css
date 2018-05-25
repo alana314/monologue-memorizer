@@ -2,7 +2,7 @@ body {
 	padding: 1rem;
 }
 .memorizerwrap {
-	width: 90%;
+	width: 100%;
 }
 
 .monologueenter {
@@ -15,8 +15,8 @@ button.reset {
 
 .monologue {
 	border: 1px solid #666;
-	width: 90%;
-	min-height: 30rem;
+	width: 100%;
+	min-height: 200rem;
 	padding: .5rem;
 	user-select: none;
 }
