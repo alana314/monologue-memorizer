@@ -13,6 +13,10 @@ $(document).ready(function(){
 
 	$('button.save').click(function(){
 		localStorage.monologue = $('.monologueenter').val();
+		if(typeof(sentences[0]) != 'undefined')
+		{
+			$('.monologue').append(sentences[0] + ". ");
+		}
 	});
 
 	$('button.reset').click(function(){
