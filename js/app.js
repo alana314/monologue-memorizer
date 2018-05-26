@@ -41,10 +41,10 @@ $(document).ready(function(){
 	});
 
 	$('button.restart').click(function(){
-		console.log('click');
 		i = 1;
 		$('.monologue').text('');
-		sentences = $('.monologueenter').val();
+		var monologue = localStorage.monologue.replace(/(?:\r\n|\r|\n)/g, '<br>');
+		sentences = monologue.split(/[.|\!|?]/);
 		if(typeof(sentences[0]) != 'undefined')
 		{
 			$('.monologue').text('').append(sentences[0] + ". ");
