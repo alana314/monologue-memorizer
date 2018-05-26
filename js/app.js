@@ -13,9 +13,10 @@ $(document).ready(function(){
 
 	$('button.save').click(function(){
 		localStorage.monologue = $('.monologueenter').val();
+		sentences = $('.monologueenter').val();
 		if(typeof(sentences[0]) != 'undefined')
 		{
-			$('.monologue').append(sentences[0] + ". ");
+			$('.monologue').text('').append(sentences[0] + ". ");
 		}
 	});
 
