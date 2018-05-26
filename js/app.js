@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	$('button.save').click(function(){
 		localStorage.monologue = $('.monologueenter').val();
-		sentences = $('.monologueenter').val();
+		sentences = localStorage.monologue.split(/[.|\!|?]/);
 		if(typeof(sentences[0]) != 'undefined')
 		{
 			$('.monologue').text('').append(sentences[0] + ". ");
@@ -39,9 +39,16 @@ $(document).ready(function(){
 		}
 
 	});
+
 	$('button.restart').click(function(){
+		console.log('click');
 		i = 1;
 		$('.monologue').text('');
+		sentences = $('.monologueenter').val();
+		if(typeof(sentences[0]) != 'undefined')
+		{
+			$('.monologue').text('').append(sentences[0] + ". ");
+		}
 	});
 });
 
