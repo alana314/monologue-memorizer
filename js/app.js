@@ -14,10 +14,12 @@ $(document).ready(function(){
 	$('button.save').click(function(){
 		localStorage.monologue = $('.monologueenter').val();
 		sentences = localStorage.monologue.split(/[.|\!|?]/);
+		i = 1;
 		if(typeof(sentences[0]) != 'undefined')
 		{
 			$('.monologue').text('').append(sentences[0] + ". ");
 		}
+		$('.savemessage').text("Saved, now tap on text below");
 	});
 
 	$('button.reset').click(function(){
