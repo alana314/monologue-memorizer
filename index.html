@@ -13,15 +13,25 @@
 	<h1>Memorizer</h1>
 	<label>1) Enter your monologue below, then hit save. This will be saved in browser storage.</label>
 	<div class="memorizerwrap">
-		<button class="button reset">Reset</button>
 		<textarea class="monologueenter"></textarea>
 		<button class="button save">Save</button>
 		<div class="savemessage"></div>
 		<hr/>
 	</div>
-	<button class="button restart">Restart</button>
-	<p>2) Tap below to show sentences from your monologue.</p>
+	<div class="memorizerwrap">
+		<label>Split by:</label>
+		<div class="delimiter-wrap">
+			<input type="radio" name="delimiter" value="sentence" id="sentence" checked="checked" />
+			<label for="slow">Sentence</label>
+			<input type="radio" name="delimiter" value="word" id="word" />
+			<label for="medium">Word</label>
+			<input type="radio" name="delimiter" value="linebreak" id="linebreak" />
+			<label for="fast">Line Break</label>
+		</div>
+	</div>
+	<p>2) Tap on the box below to show sentences from your monologue.</p>
 	<div class="monologue">
 	</div>
+	<button class="button restart">Restart</button> <button class="button reset">Delete Monologue</button>
 </body>
 </html>
